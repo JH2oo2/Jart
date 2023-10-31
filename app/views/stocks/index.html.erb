@@ -1,0 +1,20 @@
+<h1>List of Stock Symbols</h1>
+
+
+  <%#  @stock_symbols.each do |symbol| %>
+  <%# link_to stock_path, symbol.symbol  %>
+  <div id='realTimeStockData' data-controller='stock'>
+  <% @stocks.last(3).each do |stock| %>
+    <div>
+    <%= link_to stock_path(stock.id), class: "t-none" do %>
+    <h2 id='stockData'><%= stock.index %></h2>
+    </div>
+    <%# stock.name %>
+    <%# stock.id %>
+  <% end %>
+  <% end %>
+  </div>
+
+  <%# end %>
+  <%# @stock_financials.series[:annual][:bookValue][0][:period]%>
+  <%# @stock_financials.series[:annual][:bookValue][0][:v]%>
