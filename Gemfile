@@ -5,6 +5,8 @@ ruby "3.1.2"
 
 gem "dotenv-rails"
 
+gem 'cssbundling-rails'
+
 #finance gem
 gem 'basic_yahoo_finance'
 

@@ -1,8 +1,10 @@
 <h1>List of Stock Symbols</h1>
 
 
+
   <%#  @stock_symbols.each do |symbol| %>
   <%# link_to stock_path, symbol.symbol  %>
+    <h2 id='marketStatus'></h2>
   <div id='realTimeStockData' data-controller='stock'>
   <% @stocks.last(3).each do |stock| %>
     <div>
